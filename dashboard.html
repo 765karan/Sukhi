@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Sukhi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #e0f2fe, #f0f9ff);
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #2563eb;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .welcome {
+      padding: 2rem;
+      text-align: center;
+      font-size: 1.2rem;
+      color: #1e293b;
+    }
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+    }
+   .feedback-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f3f4f6;
+}
+.feedback-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #1e3a8a;
+}
+.feedback-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+.feedback-card {
+  flex: 0 0 auto;
+  min-width: 300px;
+  max-width: 300px;
+  background: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  scroll-snap-align: start;
+  font-style: italic;
+  color: #374151;
+}
+.feedback-card span {
+  display: block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card a {
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: 600;
+      display: block;
+      margin-top: 1rem;
+    }
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f3f4f6;
+      color: #6b7280;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+
+
+<body>
+  <div class="header">
+    <h1>Welcome to Sukhi</h1>
+  </div>
+
+  <div class="welcome">
+    <p><strong>Sukhi</strong> is a student-centered platform created to support mental wellness, simplify tasks, and provide access to certified counselors.</p>
+    <p>We believe in empowering students to take charge of their mental and emotional well-being.</p>
+  </div>
+
+  <div class="features">
+    <div class="card">
+      <h2>Depression Checker</h2>
+      <p>Take a quick self-assessment to know your depression level.</p>
+      <a href="depression.html">Go to Checker</a>
+    </div>
+    <div class="card">
+      <h2>Counseling Session</h2>
+      <p>Connect with professional counselors and book a session.</p>
+      <a href="counselling.html">Book Now</a>
+    </div>
+    <div class="card">
+      <h2>To-Do List</h2>
+      <p>Organize your daily academic and personal tasks easily.</p>
+      <a href="todo.html">Manage Tasks</a>
+    </div>
+  </div>
+  <div class="feedback-section">
+  <h2>User Feedback</h2>
+  <div class="feedback-scroll">
+    <div class="feedback-card">
+      <p>"Sukhi helped me understand my mental health better. I finally felt heard!"</p>
+      <span>- Priya, Student</span>
+    </div>
+    <div class="feedback-card">
+      <p>"The counseling session really made a difference. Thank you Sukhi!"</p>
+      <span>- Aman, Engineering Student</span>
+    </div>
+    <div class="feedback-card">
+      <p>"I use the To-Do list every day. It keeps me organized and motivated."</p>
+      <span>- Riya, College Freshman</span>
+    </div>
+    <div class="feedback-card">
+      <p>"Simple and powerful tool. Every student should try this!"</p>
+      <span>- Rohit, B.Sc. Student</span>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  <div class="footer">
+    TO THE STUDENT-FOR THE STUDENT-BY THE STUDENT
+  </div>
+</body>
+</html>
